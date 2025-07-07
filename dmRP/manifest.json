@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Ever find it boring and unsatisfying when you defeat the Ender Dragon and the egg is practically useless other than being a trophy and a decoration? Well now you don't have to worry, as this addon adds 8 new dragons into your game as a reward for defeating the Ender Dragon. Finally giving a reason to go to the end and put the egg in good use!",
+    "name": "Dragon Mounts (Resource Pack)",
+    "uuid": "9ff80245-c571-45c6-99c9-6bfb0b1b51b3",
+    "version": [
+      1,
+      1,
+      2
+    ],
+    "min_engine_version": [
+      1,
+      17,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Ever find it boring and unsatisfying when you defeat the Ender Dragon and the egg is practically useless other than being a trophy and a decoration? Well now you don't have to worry, as this addon adds 8 new dragons into your game as a reward for defeating the Ender Dragon. Finally giving a reason to go to the end and put the egg in good use!",
+      "type": "resources",
+      "uuid": "90b5d4e2-5efb-4be4-bc06-5caafffc2880",
+      "version": [
+        1,
+        1,
+        2
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "32c6ddba-e64c-4219-b853-e61e23aceb31",
+      "version": [
+        1,
+        1,
+        2
+      ]
+    }
+  ]
+}
