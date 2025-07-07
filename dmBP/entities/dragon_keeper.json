@@ -1,0 +1,275 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "dragonmounts:villager",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+        "wild_schedule": {
+        "minecraft:scheduler": { "min_delay_secs": 0, "max_delay_secs": 10,
+          "scheduled_events" : [
+            {
+              "filters": { "all_of": [ { "test": "hourly_clock_time", "operator": ">=", "value": 0 }, { "test": "hourly_clock_time", "operator": "<", "value": 12000 } ] },
+              "event": "minecraft:on_trader"
+            },
+            {
+              "filters": { "all_of": [ { "test": "hourly_clock_time", "operator": ">=", "value": 13000 }, { "test": "hourly_clock_time", "operator": "<", "value": 24000 } ] },
+              "event": "minecraft:off_trader"
+            }
+          ]
+        }
+      },
+      "minecraft:trader":{
+       "minecraft:economy_trade_table": {
+        "display_name": "entity.dragon_keeper.name",
+        "table": "trading/economy_trades/dragon_trades.json",
+        "new_screen": true
+      } 
+     }
+    },
+    "components": {
+        			"minecraft:dweller": {
+					"dwelling_type": "village",
+					"dweller_role": "defender",
+					"update_interval_base": 60,
+					"update_interval_variant": 40,
+					"can_find_poi": false,
+					"can_migrate": true,
+					"first_founding_reward": 0
+				},
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:type_family": {
+        "family": [
+          "villager",
+          "mob"
+        ]
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "height": 1.9,
+        "width": 0.6
+      },
+      "minecraft:nameable": {
+        "alwaysShow": false,
+        "allowNameTagRenaming": false
+      },
+      "minecraft:movement": {
+        "value": 0.5
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_path_over_water": true,
+        "can_pass_doors": true,
+        "can_open_doors": true,
+        "can_walk": true,
+        "avoid_water": true
+      },
+      "minecraft:annotation.open_door": {},
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:inventory": {
+        "inventory_size": 8,
+        "private": true
+      },
+      "minecraft:damage_sensor": [],
+      "minecraft:persistent": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.trade_with_player": {
+        "priority": 1
+      },
+      "minecraft:behavior.look_at_trading_player": {
+        "priority": 2
+      },
+      "minecraft:behavior.panic": {
+        "priority": 3,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "zombie"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "zombie_villager"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "illager"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "vex"
+                }
+              ],
+              "other_with_families": []
+            },
+            "max_dist": 8,
+            "walk_speed_multiplier": 0.6,
+            "sprint_speed_multiplier": 0.6
+          }
+        ]
+      },
+      "minecraft:behavior.move_indoors": {
+        "priority": 4,
+        "speed_multiplier": 0.8
+      },
+      "minecraft:behavior.restrict_open_door": {
+        "priority": 5
+      },
+      "minecraft:behavior.open_door": {
+        "priority": 6,
+        "close_door_after": true
+      },
+      "minecraft:behavior.share_items": {
+        "priority": 8,
+        "max_dist": 3,
+        "goal_radius": 2.0,
+        "speed_multiplier": 0.5,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "villager"
+            }
+          }
+        ]
+      },
+      "minecraft:behavior.pickup_items": {
+        "can_pickup_any_item": false,
+        "can_pickup_to_hand_or_equipment": false,
+        "cooldown_after_being_attacked": 20.0,
+        "goal_radius": 2.0,
+        "max_dist": 3.0,
+        "pickup_based_on_chance": false,
+        "speed_multiplier": 0.5,
+        "track_target": false
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 11,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 12,
+        "look_distance": 8,
+        "probability": 0.02
+      },
+      "minecraft:physics": {
+        "has_gravity": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:underwater_movement": {
+        "value": 0.02
+      },
+      "minecraft:scale": {
+        "value": 1
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+                "add": {
+			"component_groups": [			"wild_schedule"
+					]
+				}
+      }, 
+      "minecraft:entity_transformed": {},
+      "minecraft:entity_born": {},
+      "minecraft:on_trader": {
+                    "add": {
+			"component_groups": [			"minecraft:trader"
+					]
+				}
+      },
+      "minecraft:off_trader": {
+                    "remove": {
+			"component_groups": [			"minecraft:trader"
+					]
+				}
+      },
+      "minecraft:spawn_cleric": {},
+      "minecraft:spawn_armorer": {},
+      "minecraft:spawn_butcher": {},
+      "minecraft:ageable_grow_up": {},
+      "minecraft:become_cleric": {},
+      "minecraft:start_celebrating": {},
+      "minecraft:stop_celebrating": {},
+      "on:death": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "on:hurt": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "on:hurt_by_player": {
+        "queue_command": {
+          "command": ["say hey no!!"]
+        }
+      },
+      "on:ignite": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "on:target_acquired": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "on:target_escape": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "on:wake_with_owner": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "on:tick_action": {
+        "queue_command": {
+          "command": []
+        }
+      }
+    }
+  }
+}
