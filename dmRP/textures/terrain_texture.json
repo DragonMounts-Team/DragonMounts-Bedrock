@@ -1,0 +1,35 @@
+{
+	"resource_pack_name": "pack.name",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"none": {
+			"textures": [ "textures/entity/none" ]
+		},
+		"aether_dragon_egg": {
+			"textures": [ "textures/blocks/aether" ]
+		},
+		"ender_dragon_egg": {
+			"textures": [ "textures/blocks/dragon_egg" ]
+		},
+		"fire_dragon_egg": {
+			"textures": [ "textures/blocks/fire" ]
+		},
+		"forest_dragon_egg": {
+			"textures": [ "textures/blocks/forest" ]
+		},
+		"ice_dragon_egg": {
+			"textures": [ "textures/blocks/ice" ]
+		},
+		"nether_dragon_egg": {
+			"textures": [ "textures/blocks/magma" ]
+		},
+		"skeleton_dragon_egg": {
+		      "textures": [ "textures/blocks/ghost" ]
+		},
+		"water_dragon_egg": {
+			"textures": [ "textures/blocks/water" ]
+		}
+	} 
+}                      
