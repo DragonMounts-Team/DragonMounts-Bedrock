@@ -1,0 +1,78 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Ever find it boring and unsatisfying when you defeat the Ender Dragon and the egg is practically useless other than being a trophy and a decoration? Well now you don't have to worry, as this addon adds 8 new dragons into your game as a reward for defeating the Ender Dragon. Finally giving a reason to go to the end and put the egg in good use!",
+    "name": "Dragon Mounts - Behavior Pack",
+    "uuid": "32c6ddba-e64c-4219-b853-e61e23aceb31",
+    "version": [
+      1,
+      1,
+      2
+    ],
+    "min_engine_version": [
+      1,
+      17,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Ever find it boring and unsatisfying when you defeat the Ender Dragon and the egg is practically useless other than being a trophy and a decoration? Well now you don't have to worry, as this addon adds 8 new dragons into your game as a reward for defeating the Ender Dragon. Finally giving a reason to go to the end and put the egg in good use!",
+      "type": "data",
+      "uuid": "2bb5ea44-1fc8-4c20-823e-637e2836be7d",
+      "version": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "script",
+      "uuid": "0bdce96a-f27e-4d57-a393-0c03dfd77ce1",
+      "version": [
+        0,
+        0,
+        1
+      ],
+      "entry": "scripts/main.js",
+      "language": "javascript"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "9ff80245-c571-45c6-99c9-6bfb0b1b51b3",
+      "version": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "version": "1.14.0",
+      "module_name": "@minecraft/server"
+    },
+    {
+      "version": "1.3.0",
+      "module_name": "@minecraft/server-ui"
+    },
+    {
+      "version": "1.2.0",
+      "module_name": "@minecraft/common"
+    }
+  ],
+      "subpacks": [
+    {
+      "folder_name": "Realms",
+      "name": "Realms",
+      "memory_tier": 0
+    },
+    {
+      "folder_name": "Normal",
+      "name": "Normal",
+      "memory_tier": 1
+    }
+  ],
+"metadata": {
+        "product_type": "addon"
+    }
+}
