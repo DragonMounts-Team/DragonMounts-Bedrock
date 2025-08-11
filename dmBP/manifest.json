@@ -6,8 +6,8 @@
     "uuid": "32c6ddba-e64c-4219-b853-e61e23aceb31",
     "version": [
       1,
-      1,
-      2
+      3,
+      1
     ],
     "min_engine_version": [
       1,
@@ -22,8 +22,8 @@
       "uuid": "2bb5ea44-1fc8-4c20-823e-637e2836be7d",
       "version": [
         1,
-        1,
-        2
+        3,
+        1
       ]
     },
     {
@@ -43,33 +43,13 @@
       "uuid": "9ff80245-c571-45c6-99c9-6bfb0b1b51b3",
       "version": [
         1,
-        1,
-        2
+        3,
+        1
       ]
     },
     {
-      "version": "1.14.0",
+      "version": "1.16.0",
       "module_name": "@minecraft/server"
-    },
-    {
-      "version": "1.3.0",
-      "module_name": "@minecraft/server-ui"
-    },
-    {
-      "version": "1.2.0",
-      "module_name": "@minecraft/common"
-    }
-  ],
-      "subpacks": [
-    {
-      "folder_name": "Realms",
-      "name": "Realms",
-      "memory_tier": 0
-    },
-    {
-      "folder_name": "Normal",
-      "name": "Normal",
-      "memory_tier": 1
     }
   ],
 "metadata": {
