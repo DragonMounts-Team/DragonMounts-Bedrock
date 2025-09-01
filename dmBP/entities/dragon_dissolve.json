@@ -1,0 +1,178 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dm:dragon_dissolve",
+			"runtime_identifier": "minecraft:ender_dragon",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"dm:death": {
+				"minecraft:timer": {
+					"time": 0.0,
+					"looping": true,
+					"time_down_event": {
+						"event": "dm:death",
+						"target": "self"
+					}
+				}
+			},
+			"dm:aether_dragon": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"dm:water_dragon": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"dm:ender_dragon": {
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"dm:fire_dragon": {
+				"minecraft:variant": {
+					"value": 3
+				}
+			},
+			"dm:forest_dragon": {
+				"minecraft:variant": {
+					"value": 4
+				}
+			},
+			"dm:ice_dragon": {
+				"minecraft:variant": {
+					"value": 5
+				}
+			},
+			"dm:skeleton_dragon": {
+				"minecraft:variant": {
+					"value": 6
+				}
+			},
+			"dm:nether_dragon": {
+				"minecraft:variant": {
+					"value": 7
+				}
+			}
+		},
+		"components": {
+			"minecraft:fire_immune": true,
+			"minecraft:persistent": {},
+			"minecraft:scale": {
+				"value": 1.0
+			},
+			"minecraft:type_family": {
+				"family": [
+					"dm"
+				]
+			},
+			"minecraft:health": {
+				"value": 16,
+				"max": 16
+			},
+			"minecraft:knockback_resistance": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			},
+			"minecraft:collision_box": {
+				"width": 0.0,
+				"height": 0.0
+			},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": true
+			},
+			"minecraft:timer": {
+				"time": 0.0,
+				"looping": false,
+				"time_down_event": {
+					"event": "minecraft:entity_spawned",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"dm:death"
+					]
+				}
+			},
+			"dm:death": {
+				"queue_command": {
+					"command": [
+						"kill @s"
+					]
+				}
+			},
+			"dm:aether_dragon": {
+				"add": {
+					"component_groups": [
+						"dm:aether_dragon"
+					]
+				}
+			},
+			"dm:water_dragon": {
+				"add": {
+					"component_groups": [
+						"dm:water_dragon"
+					]
+				}
+			},
+			"dm:ender_dragon": {
+				"add": {
+					"component_groups": [
+						"dm:ender_dragon"
+					]
+				}
+			},
+			"dm:fire_dragon": {
+				"add": {
+					"component_groups": [
+						"dm:fire_dragon"
+					]
+				}
+			},
+			"dm:forest_dragon": {
+				"add": {
+					"component_groups": [
+						"dm:forest_dragon"
+					]
+				}
+			},
+			"dm:ice_dragon": {
+				"add": {
+					"component_groups": [
+						"dm:ice_dragon"
+					]
+				}
+			},
+			"dm:skeleton_dragon": {
+				"add": {
+					"component_groups": [
+						"dm:skeleton_dragon"
+					]
+				}
+			},
+			"dm:nether_dragon": {
+				"add": {
+					"component_groups": [
+						"dm:nether_dragon"
+					]
+				}
+			} 
+		}
+	}
+}

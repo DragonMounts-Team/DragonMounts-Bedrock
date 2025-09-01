@@ -1,0 +1,40 @@
+{
+  "format_version":"1.13.0",
+  "minecraft:feature_rules":{
+    "description":{
+      "identifier":"minecraft:house_dragon_keeper",
+      "places_feature":"minecraft:house_dragon_keeper"
+    },
+    "conditions":{
+      "placement_pass":"surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+              {
+                  "test": "has_biome_tag",
+                  "operator": "!=",
+                  "value": "river"
+              },
+              {
+                  "any_of": [
+                      {
+                          "test": "has_biome_tag",
+                          "operator": "==",
+                          "value": "overworld"
+                      } 
+                  ]
+              }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+			"iterations": 1,
+			"scatter_chance": 0.05,
+			"x": 0,
+			"y": "query.heightmap(variable.worldx, variable.worldz)",
+			"z": 0
+		}
+  }
+}
+// thêm bất cứ thứ gì bạn muốn ở đây nhá ko cần ngại
