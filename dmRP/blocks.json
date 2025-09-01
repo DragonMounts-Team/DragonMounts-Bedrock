@@ -1,0 +1,28 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"dm:aether_dragon_egg": {
+		"sound": "stone"
+	},
+	"dm:fire_dragon_egg": {
+		"sound": "stone"
+	},
+	"dm:forest_dragon_egg": {
+		"sound": "stone"
+	},
+	"dm:ice_dragon_egg": {
+		"sound": "stone"
+	},
+	"dm:nether_dragon_egg": {
+		"sound": "stone"
+	},
+	"dm:skeleton_dragon_egg": {
+		"sound": "stone"
+	},
+	"dm:water_dragon_egg": {
+		"sound": "stone"
+	}
+}

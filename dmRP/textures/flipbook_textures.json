@@ -1,0 +1,38 @@
+[
+    {
+    "flipbook_texture": "textures/blocks/eggs/aether",
+    "atlas_tile": "aether_dragon_egg",
+    "frames": [ 0, 1, 2, 3 ],
+    "ticks_per_frame": 5
+  },
+  {
+    "flipbook_texture": "textures/blocks/eggs/water",
+    "atlas_tile": "water_dragon_egg",
+    "frames": [ 0, 1, 2 ],
+    "ticks_per_frame": 5
+  },
+      {
+    "flipbook_texture": "textures/blocks/eggs/ghost",
+    "atlas_tile": "skeleton_dragon_egg",
+    "frames": [ 0, 1, 2 ],
+    "ticks_per_frame": 5
+  },
+      {
+    "flipbook_texture": "textures/blocks/eggs/forest",
+    "atlas_tile": "forest_dragon_egg",
+    "frames": [ 0, 1, 2 ], 
+    "ticks_per_frame": 5
+  },
+   {
+    "flipbook_texture": "textures/blocks/eggs/ice",
+    "atlas_tile": "ice_dragon_egg",
+    "frames": [ 0, 1, 2, 3 ],
+    "ticks_per_frame": 5
+  },
+      {
+    "flipbook_texture": "textures/blocks/eggs/fire",
+    "atlas_tile": "fire_dragon_egg",
+    "frames": [ 0, 1, 2 ],
+    "ticks_per_frame": 5
+  }
+]  
