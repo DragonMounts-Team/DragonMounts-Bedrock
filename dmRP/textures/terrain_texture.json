@@ -27,6 +27,9 @@
 		},
 		"water_dragon_egg": {
 			"textures": [ "textures/blocks/eggs/water" ]
-		}
+		},
+		"steel_block": {
+			"textures": [ "textures/blocks/steel_block" ]
+		}		
 	} 
 }                      

@@ -24,5 +24,9 @@
 	},
 	"dm:water_dragon_egg": {
 		"sound": "stone"
-	}
+	},
+	"dm:steel_block": {
+      "textures": "steel_block",	    
+		"sound": "iron"
+	}	
 }

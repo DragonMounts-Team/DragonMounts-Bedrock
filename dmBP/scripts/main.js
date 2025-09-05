@@ -7,3 +7,4 @@ import "./egg/forest";
 import "./egg/ender";
 import "./egg/skeleton";
 import "./fallingblock/manager";
+import "./breath";

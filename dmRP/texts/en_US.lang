@@ -43,6 +43,7 @@ item.spawn_egg.entity.dm:forest_dragon_egg.name=Forest Dragon Egg	#
 item.spawn_egg.entity.dm:fire_dragon_egg.name=Fire Dragon Egg	#
 item.spawn_egg.entity.dm:nether_dragon_egg.name=Nether Dragon Egg	#
 item.spawn_egg.entity.dm:skeleton_dragon_egg.name=Skeleton Dragon Egg	#
+item.spawn_egg.entity.dm:cannon.name=Cannon
 
 tile.dm:aether_dragon_egg.name=Aether Dragon Egg	#
 tile.dm:ender_dragon_egg.name=Ender Dragon Egg	#
@@ -52,6 +53,7 @@ tile.dm:ice_dragon_egg.name=Ice Dragon Egg	#
 tile.dm:nether_dragon_egg.name=Nether Dragon Egg	#
 tile.dm:skeleton_dragon_egg.name=Skeleton Dragon Egg	#
 tile.dm:water_dragon_egg.name=Water Dragon Egg	#
+tile.dm:steel_block.name=Steel Block
 
 action.hint.exit.unknown=Tap dismount to dismount	#
 action.hint.exit.dm:ender_dragon=Tap dismount to dismount	#
@@ -62,6 +64,8 @@ action.hint.exit.dm:forest_dragon=Tap dismount to dismount	#
 action.hint.exit.dm:fire_dragon=Tap dismount to dismount	#
 action.hint.exit.dm:nether_dragon=Tap dismount to dismount	#
 action.hint.exit.dm:skeleton_dragon=Tap dismount to dismount	#
+action.hint.exit.dm:cannon=Tap dismount to dismount	#
+action.interact.back_to_item.dm=Give Cannon
  
 action.interact.hatch_egg=Hatch	#
 action.interact.fasthatching.dm=Speed up hatching time	#
@@ -86,3 +90,16 @@ tooltip.dm.fire=§mFire
 tooltip.dm.nether=§pNether
 tooltip.dm.skeleton=§7Skeleton
    
+   
+item.dragonmountsplus:steel_chestplate.name=Steel Chestplate
+item.dragonmountsplus:steel_boots.name=Steel Boots
+item.dragonmountsplus:steel_helmet.name=Steel Helmet
+item.dragonmountsplus:steel_leggings.name=Steel Leggings
+item.dragonmounts.dragon_axe.steel=Steel Axe
+item.dragonmounts.dragon_hoe.steel=Steel Hoe
+item.dragonmounts.dragon_shovel.steel=Steel Shovel
+item.dragonmounts.dragon_pickaxe.steel=Steel Pickaxe
+item.dragonmounts.dragon_sword.steel=Steel Sword
+item.steel_nugget=Steel Nugget
+item.steel_ingot=Steel Ingot
+item.bullet.name=Cannon Ball

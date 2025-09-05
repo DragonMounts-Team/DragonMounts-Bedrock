@@ -95,9 +95,9 @@
 				"controller.render.glow",
 				"controller.render.dragons.is_armored",
 				"controller.render.dragons.is_chested",
-				{ "controller.render.dragondm12_death_pre_pass": "query.death_ticks > 1.0" },
-				{ "controller.render.dragondm12_death_main_pass": "query.death_ticks > 1.0" },
-				{ "controller.render.dragondm12.default": "query.death_ticks <= 1.0" }
+				{ "controller.render.dragondm1_death_pre_pass": "query.death_ticks > 1.0" },
+				{ "controller.render.dragondm1_death_main_pass": "query.death_ticks > 1.0" },
+				{ "controller.render.dragondm1.default": "query.death_ticks <= 1.0" }
 			],
 			"spawn_egg": {
 				"texture": "ender_dragon_head"

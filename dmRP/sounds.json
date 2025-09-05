@@ -37,11 +37,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							1.5
+							0.8
 						],
 						"pitch": [
-							0.8,
-							1.2
+							0.5,
+							1.0
 						]
 					}
 				}
@@ -67,11 +67,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							1.5
+							0.8
 						],
 						"pitch": [
-							0.8,
-							1.2
+							0.5,
+							1.0
 						]
 					}
 				}
@@ -97,11 +97,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							1.5
+							0.8
 						],
 						"pitch": [
-							0.8,
-							1.2
+							0.5,
+							1.0
 						]
 					}
 				}
@@ -127,11 +127,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							1.5
+							0.8
 						],
 						"pitch": [
-							0.8,
-							1.2
+							0.5,
+							1.0
 						]
 					}
 				}
@@ -157,11 +157,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							1.5
+							0.8
 						],
 						"pitch": [
-							0.8,
-							1.2
+							0.5,
+							1.0
 						]
 					}
 				}
@@ -187,11 +187,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							1.5
+							0.8
 						],
 						"pitch": [
-							0.8,
-							1.2
+							0.5,
+							1.0
 						]
 					}
 				}
@@ -217,11 +217,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							1.5
+							0.8
 						],
 						"pitch": [
-							0.8,
-							1.2
+							0.5,
+							1.0
 						]
 					}
 				}
@@ -247,11 +247,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							1.5
+							0.8
 						],
 						"pitch": [
-							0.8,
-							1.2
+							0.5,
+							1.0
 						]
 					}
 				}
@@ -376,6 +376,20 @@
 					}
 				}
 			},
+			"dm:cannon": {
+				"volume": 8.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+			  "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+						"volume": 5.0,
+						"pitch": 0.5
+					}
+				}
+			},			
 			"dm:dragon_dissolve": {
 				"volume": 1.0,
 				"pitch": 1.0,

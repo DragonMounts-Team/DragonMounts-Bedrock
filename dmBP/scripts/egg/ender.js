@@ -15,6 +15,6 @@ world.beforeEvents.itemUseOn.subscribe(event => {
   ) {
     const { x, y, z } = block.location;
     player.runCommandAsync(`setblock ${x} ${y} ${z} air`);
-    player.runCommandAsync(`summon dragonmounts:ender_dragon_egg ${x} ${y + 1} ${z}`);
+    player.runCommandAsync(`summon dm:ender_dragon_egg ${x} ${y + 1} ${z}`);
   }
 });

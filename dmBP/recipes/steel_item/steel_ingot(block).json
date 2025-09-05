@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "block:steel_ingot"
+    },
+    "tags": [ "crafting_table" ],
+  "pattern": [
+    "X"
+  ],
+  "key": {
+    "X": {
+      "item": "dm:steel_block"
+    }
+  },
+    "result": {
+      "item": "dm:steel_ingot",
+            "count": 9
+    }
+  }
+}
