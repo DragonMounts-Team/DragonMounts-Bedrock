@@ -3,7 +3,9 @@
 [![CurseForge Downloads](https://img.shields.io/curseforge/dt/1124643?logo=Curseforge&label=CurseForge&labelColor=Gray)](https://www.curseforge.com/minecraft-bedrock/addons/dragon-mounts-2)
 [![Discord](https://img.shields.io/discord/1293105990476103720?logo=Discord&logoColor=white&label=Discord&labelColor=%235865F2)](https://discord.gg/Ewm8aTTJ3K)
 
-Dragon Mounts: Bedrock Edition is the official bedrock port on Bedrock Edition.
+Formerly known as Dragon Mounts Lite. This addon aims to port Dragon Mounts into Bedrock Edition, please do not report bugs related to this version to the Java Edition team and rather report these into our Discord instead!
+
+> Disclaimer: You have to play the Dragon Mounts add-ons by themselves, not together!
 
 ## License
 The add-ons binaries, as well as its textures and code are licensed under the GPLv3 license.
