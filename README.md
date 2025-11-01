@@ -19,10 +19,3 @@ The add-on's binaries, as well as it's textures and code are licensed under the 
 Dragon Mounts 1 is owned by Tomanex, JDSK0ala and the Dragon Mounts Team.
 
 © 2018-2025 Dragon Mounts Team.
-
-## Credits
-- Tomanex - Project Owner & Lead Artist
-- JDSK0ala - Project Co-owner, Modeler and Animator
-- Moaswies - Coder
-- Mr. Goofy (Mrngda) - Former Coder
-- Equinox - Artist
