@@ -1,4 +1,3 @@
-tag @e[family=dragon] remove flying 
-tag @e[family=dragon] remove to_catch_player
-tag @a remove can_catch
-execute as @e[tag=flying,family=dragon] run effect @s slow_falling 1 1 true
+effect @e[hasitem={item=minecraft:diamond_horse_armor,location=slot.equippable},family=dragon] resistance 5 3
+effect @e[hasitem={item=minecraft:iron_horse_armor,location=slot.equippable},family=dragon] resistance 5 1
+effect @e[hasitem={item=minecraft:golden_horse_armor,location=slot.equippable},family=dragon] resistance 5 0

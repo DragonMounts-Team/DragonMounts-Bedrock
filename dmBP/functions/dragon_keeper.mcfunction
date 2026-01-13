@@ -1,2 +1,3 @@
+gamerule sendcommandfeedback false
 setblock ~~~ air
-summon dm:villager ~~~  
+summon dragonmounts:villager ~~~ 

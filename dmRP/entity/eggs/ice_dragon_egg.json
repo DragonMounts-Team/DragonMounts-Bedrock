@@ -2,13 +2,13 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "dm:ice_dragon_egg",
+			"identifier": "dragonmounts:ice_dragon_egg",
 			"materials": {
 				"dragon_egg": "dragon_egg",
 				"death": "entity_dissolve_layer1.skinning"
 			},
 			"textures": {
-				"dragon_egg": "textures/entitys/dragon_eggs/ice"
+				"dragon_egg": "textures/entity/dragon_eggs/ice"
 			},
 			"geometry": {
 				"dragon_egg": "geometry.dragon_egg"
@@ -29,13 +29,13 @@
 				"dragonegg_bs1_sou": "mob.mountdragon_egg.bs1"
 			},
 			"particle_effects": {
-				"dragon_egg_hatching": "dm:ice_dragon_egg_hatching",
-				"dragon_egg_hatchings": "dm:dragon_egg_hatchings",
-				"dragon_egg_bs": "dm:ice_dragon_egg_bs"
+				"dragon_egg_hatching": "dragonmounts:ice_dragon_egg_hatching",
+				"dragon_egg_hatchings": "dragonmounts:dragon_egg_hatchings",
+				"dragon_egg_bs": "dragonmounts:ice_dragon_egg_bs"
 			},
 			"render_controllers": [
-				{ "controller.render.dragondm1_egg": "query.death_ticks < 1.0" },
-				{ "controller.render.dragondm1_egg_death": "query.death_ticks >= 1.0" }
+				{ "controller.render.ice_dragon_egg": "query.death_ticks < 1.0" },
+				{ "controller.render.ice_dragon_egg_death": "query.death_ticks >= 1.0" }
 			],
 			"spawn_egg": {
 				"texture": "icedragon_egg_item"

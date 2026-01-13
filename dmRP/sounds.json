@@ -37,11 +37,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							0.8
+							1.5
 						],
 						"pitch": [
-							0.5,
-							1.0
+							0.8,
+							1.2
 						]
 					}
 				}
@@ -67,11 +67,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							0.8
+							1.5
 						],
 						"pitch": [
-							0.5,
-							1.0
+							0.8,
+							1.2
 						]
 					}
 				}
@@ -97,11 +97,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							0.8
+							1.5
 						],
 						"pitch": [
-							0.5,
-							1.0
+							0.8,
+							1.2
 						]
 					}
 				}
@@ -127,11 +127,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							0.8
+							1.5
 						],
 						"pitch": [
-							0.5,
-							1.0
+							0.8,
+							1.2
 						]
 					}
 				}
@@ -157,11 +157,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							0.8
+							1.5
 						],
 						"pitch": [
-							0.5,
-							1.0
+							0.8,
+							1.2
 						]
 					}
 				}
@@ -187,11 +187,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							0.8
+							1.5
 						],
 						"pitch": [
-							0.5,
-							1.0
+							0.8,
+							1.2
 						]
 					}
 				}
@@ -217,11 +217,11 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							0.8
+							1.5
 						],
 						"pitch": [
-							0.5,
-							1.0
+							0.8,
+							1.2
 						]
 					}
 				}
@@ -247,16 +247,16 @@
 						"sound": "mob.mountdragon.attack.eat",
 						"volume": [
 							0.5,
-							0.8
+							1.5
 						],
 						"pitch": [
-							0.5,
-							1.0
+							0.8,
+							1.2
 						]
 					}
 				}
 			},
-			"dm:ender_dragon_egg": {
+			"dragonmounts:ender_dragon_egg": {
 				"volume": 8.0,
 				"pitch": [
 					0.8,
@@ -271,7 +271,7 @@
 					}
 				}
 			},
-			"dm:aether_dragon_egg": {
+			"dragonmounts:aether_dragon_egg": {
 				"volume": 8.0,
 				"pitch": [
 					0.8,
@@ -286,7 +286,7 @@
 					}
 				}
 			},
-			"dm:water_dragon_egg": {
+			"dragonmounts:water_dragon_egg": {
 				"volume": 8.0,
 				"pitch": [
 					0.8,
@@ -301,7 +301,7 @@
 					}
 				}
 			},
-			"dm:ice_dragon_egg": {
+			"dragonmounts:ice_dragon_egg": {
 				"volume": 8.0,
 				"pitch": [
 					0.8,
@@ -316,7 +316,7 @@
 					}
 				}
 			},
-			"dm:forest_dragon_egg": {
+			"dragonmounts:forest_dragon_egg": {
 				"volume": 8.0,
 				"pitch": [
 					0.8,
@@ -331,7 +331,7 @@
 					}
 				}
 			},
-			"dm:fire_dragon_egg": {
+			"dragonmounts:fire_dragon_egg": {
 				"volume": 8.0,
 				"pitch": [
 					0.8,
@@ -346,7 +346,7 @@
 					}
 				}
 			},
-			"dm:nether_dragon_egg": {
+			"dragonmounts:nether_dragon_egg": {
 				"volume": 8.0,
 				"pitch": [
 					0.8,
@@ -361,7 +361,7 @@
 					}
 				}
 			},
-			"dm:skeleton_dragon_egg": {
+			"dragonmounts:skeleton_dragon_egg": {
 				"volume": 8.0,
 				"pitch": [
 					0.8,
@@ -376,21 +376,7 @@
 					}
 				}
 			},
-			"dm:cannon": {
-				"volume": 8.0,
-				"pitch": [
-					0.8,
-					1.2
-				],
-				"events": {
-			  "death" : "mob.irongolem.death",
-               "hurt" : "mob.irongolem.hit",
-						"volume": 5.0,
-						"pitch": 0.5
-					}
-				}
-			},			
-			"dm:dragon_dissolve": {
+			"dragonmounts:dragon_dissolve": {
 				"volume": 1.0,
 				"pitch": 1.0,
 				"events": {
@@ -398,7 +384,7 @@
 					"death": "mob.mountdragon.null"
 				}
 			},
-			   "dm:villager" : {
+			   "dragonmounts:villager" : {
             "events" : {
                "ambient" : "mob.villager.idle",
                "death" : "mob.villager.death",
