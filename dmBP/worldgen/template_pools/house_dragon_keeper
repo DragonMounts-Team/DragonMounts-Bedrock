@@ -1,0 +1,18 @@
+{
+    "format_version": "1.21.20",
+    "minecraft:template_pool": {
+        "description": {
+            "identifier": "dragonmounts:house_dragon_keeper"
+        },
+        "elements": [
+        {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "house_dragon_keeper",
+                    "processors": "dragonmounts:processor_default"
+                },
+                "weight": 1
+            }
+        ]
+    }
+}
