@@ -1,10 +1,2 @@
-import "./egg/aether1";
-import "./egg/nether";
-import "./egg/ice";
-import "./egg/fire";
-import "./egg/water";
-import "./egg/forest";
-import "./egg/ender";
-import "./egg/skeleton";
+import "./egg/eggs";
 import "./fallingblock/manager";
-import "./breath";
