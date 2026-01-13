@@ -1,0 +1,22 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "dragonmounts:house_dragon_keeper"
+		},
+		
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 19771549,
+			"separation": 30,
+			"spacing": 72,
+			"spread_type": "linear"
+		},
+		"structures": [
+			{
+				"structure": "dragonmounts:house_dragon_keeper",
+				"weight": 1
+			}
+		]
+	}
+}
