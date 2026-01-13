@@ -540,6 +540,22 @@
           "value": 1
         }
       },
+      "dm:dragon_armor_copper": {
+         "minecraft:damage_sensor": {
+          "triggers": [				
+            {
+              "damage_multiplier": 0.70
+            },
+            {
+              "cause": "fall",
+              "deals_damage": false
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 5
+        }
+      },
       "dm:dragon_armor_gold": {
                   "minecraft:damage_sensor": {
           "triggers": [				
@@ -804,10 +820,11 @@
             "slot": 1,
             "item": "horsearmoriron",
             "accepted_items": [
-              "dm:dragonarmor_emerald",
+              "minecraft:netherite_horse_armor",
               "minecraft:iron_horse_armor",
               "minecraft:golden_horse_armor",
-              "minecraft:diamond_horse_armor"
+              "minecraft:diamond_horse_armor",
+              "minecraft:copper_horse_armor" 
             ],
             "on_equip": {
               "event": "dm:dragon_hasarmor"
@@ -1303,6 +1320,12 @@
                   "test": "has_equipment",
                   "domain": "armor",
                   "operator": "!=",
+                  "value": "minecraft:copper_horse_armor"
+                },       
+                {
+                  "test": "has_equipment",
+                  "domain": "armor",
+                  "operator": "!=",
                   "value": "minecraft:golden_horse_armor"
                 },
                 {
@@ -1315,7 +1338,7 @@
                   "test": "has_equipment",
                   "domain": "armor",
                   "operator": "!=",
-                  "value": "dm:dragonarmor_emerald"
+                  "value": "minecraft:netherite_horse_armor"
                 },
                 {
                   "test": "is_mark_variant",
@@ -1351,6 +1374,27 @@
               ]
             }
           },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "armor",
+                  "value": "minecraft:copper_horse_armor"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 5
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "dm:dragon_armor_copper"
+              ]
+            }
+          },,
           {
             "filters": {
               "all_of": [
@@ -1399,7 +1443,7 @@
                 {
                   "test": "has_equipment",
                   "domain": "armor",
-                  "value": "dm:dragonarmor_emerald"
+                  "value": "minecraft:netherite_horse_armor"
                 },
                 {
                   "test": "is_mark_variant",
