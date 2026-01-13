@@ -1,0 +1,50 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:jigsaw": {
+		"description": {
+			"identifier": "dragonmounts:house_dragon_keeper"
+		},
+		"biome_filters": [
+        {
+          "all_of": [
+            {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "ocean"
+            },
+            {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "river"
+            },
+            {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "lakes"
+            },
+            {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "overworld"
+                }
+              ]
+            }
+          ]
+        }
+        ],
+		"heightmap_projection": "world_surface",
+		"max_depth": 7,
+        "start_height": {
+      "value": {
+        "absolute": 0
+      },
+      "type": "constant"
+    },
+    "max_distance_from_center": 128,
+		"start_pool": "dragonmounts:house_dragon_keeper", //Places main piece (Jigsaw A)
+		"step": "underground_structures",
+		"terrain_adaptation": "beard_thin"
+	}
+}
