@@ -8,28 +8,28 @@
 			"textures": [ "textures/entity/none" ]
 		},
 		"aether_dragon_egg": {
-			"textures": [ "textures/blocks/aether" ]
-		},
-		"ender_dragon_egg": {
-			"textures": [ "textures/blocks/dragon_egg" ]
+			"textures": [ "textures/blocks/eggs/aether" ]
 		},
 		"fire_dragon_egg": {
-			"textures": [ "textures/blocks/fire" ]
+			"textures": [ "textures/blocks/eggs/fire" ]
 		},
 		"forest_dragon_egg": {
-			"textures": [ "textures/blocks/forest" ]
+			"textures": [ "textures/blocks/eggs/forest" ]
 		},
 		"ice_dragon_egg": {
-			"textures": [ "textures/blocks/ice" ]
+			"textures": [ "textures/blocks/eggs/ice" ]
 		},
 		"nether_dragon_egg": {
 			"textures": [ "textures/blocks/magma" ]
 		},
 		"skeleton_dragon_egg": {
-		      "textures": [ "textures/blocks/ghost" ]
+		      "textures": [ "textures/blocks/eggs/ghost" ]
 		},
 		"water_dragon_egg": {
-			"textures": [ "textures/blocks/water" ]
-		}
+			"textures": [ "textures/blocks/eggs/water" ]
+		},
+		"steel_block": {
+			"textures": [ "textures/blocks/steel_block" ]
+		}		
 	} 
 }                      

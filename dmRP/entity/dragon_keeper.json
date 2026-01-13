@@ -2,17 +2,17 @@
   "format_version": "1.8.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "dragonmounts:villager",
+      "identifier": "dm:villager",
       "min_engine_version": "1.8.0",
       "materials": {
         "default": "villager"
       },
       "textures": {
-        "farmer": "textures/entity/dragon_keeper/dragonmounts_villager",
-        "librarian": "textures/entity/dragon_keeper/dragonmounts_villager",
-        "priest": "textures/entity/dragon_keeper/dragonmounts_villager",
-        "smith": "textures/entity/dragon_keeper/dragonmounts_villager",
-        "butcher": "textures/entity/dragon_keeper/dragonmounts_villager"
+        "farmer": "textures/entitys/dragon_keeper/dragonmounts_villager",
+        "librarian": "textures/entitys/dragon_keeper/dragonmounts_villager",
+        "priest": "textures/entitys/dragon_keeper/dragonmounts_villager",
+        "smith": "textures/entitys/dragon_keeper/dragonmounts_villager",
+        "butcher": "textures/entitys/dragon_keeper/dragonmounts_villager"
       },
       "geometry": {
         "default": "geometry.dragonmounts_villager_default"

@@ -13,36 +13,41 @@
 				"dissolve_1": "entity_dissolve_layer1.skinning"
 			},
 			"textures": {
-				"water_dragon": "textures/entity/water_dragon/water_dragon",
-				"glow": "textures/entity/water_dragon/glow",
-				"dragon_saddled": "textures/entity/dragon_saddled",
-				"dragon_chested": "textures/entity/dragon_chested",
-				"dragon_armor_iron": "textures/entity/dragon_armor/armor_iron",
-				"dragon_armor_gold": "textures/entity/dragon_armor/armor_gold",
-				"dragon_armor_emerald": "textures/entity/dragon_armor/armor_emerald",
-				"dragon_armor_diamond": "textures/entity/dragon_armor/armor_diamond",
-				"dragon_none": "textures/entity/none",
-				"exploding": "textures/entity/dragon_dissolve",
-				"beam": "textures/entity/endercrystal/endercrystal_beam"
+				"defaultdm1": "textures/entitys/water_dragon/water_dragon",
+				"glow": "textures/entitys/water_dragon/glow",
+				"dragon_saddled": "textures/entitys/dragon_saddled",
+				"dragon_chested": "textures/entitys/dragon_chested",
+				"dragon_armor_iron": "textures/entitys/dragon_armor/armor_iron",
+				"dragon_armor_gold": "textures/entitys/dragon_armor/armor_gold",
+				"dragon_armor_emerald": "textures/entitys/dragon_armor/armor_emerald",
+				"dragon_armor_diamond": "textures/entitys/dragon_armor/armor_diamond",
+				"dragon_none": "textures/entitys/none",
+				"exploding": "textures/entitys/dragon_dissolve",
+				"beam": "textures/entitys/endercrystal/endercrystal_beam"
 			},
 			"geometry": {
-				"dragon_default": "geometry.mountdragon_default2",							"glow": "geometry.mountdragon_default",
+				"dragon_default": "geometry.mountdragon_default2dm1",							"glow": "geometry.mountdragon_default2dm1",
 				"dragon_saddled": "geometry.mountdragon_saddled",
 				"dragon_chested": "geometry.mountdragon_chested"
 			},
 			"animations": {
-				"dragon_default": "animation.dragon.default",
-				"dragon_default_b": "animation.dragon.default_b",
-				"dragon_default_walk": "animation.dragon.default_walk",
-				"dragon_fly": "animation.dragon.fly",
-				"dragon_subduction": "animation.dragon.subduction",
-				"dragon_hover": "animation.dragon.hover",
-				"dragon_on_ground": "animation.dragon.on_ground",
-				"dragon_sit": "animation.dragon.sit",
-				"dragon_walk": "animation.dragon.walk",
-				"dragon_ani": "controller.animation.dragon.action",
-				"dragon_attack": "animation.dragon.attack",
-				"dragon_shoot": "animation.dragon.shoot"
+				"dragon_default": "animation.dragondm1.default",
+				"dragon_default_b": "animation.dragondm1.default_b",
+				"dragon_default_walk": "animation.dragondm1.default_walk",
+				"dragon_fly": "animation.dragondm1.fly",
+				"dragon_subduction": "animation.dragondm1.subduction",
+				"dragon_hover": "animation.dragondm1.hover",
+				"dragon_on_ground": "animation.dragondm1.on_ground",
+				"dragon_sit": "animation.dragondm1.sit",
+				"dragon_walk": "animation.dragondm1.walk",
+				"dragon_ani": "controller.animation.dragondm1.action",
+				"dragon_attack": "animation.dragondm1.attack",
+				"dragon_shoot": "animation.dragondm1.shoot",
+				"baby": "animation.dragondm1.baby",
+				"baby1": "animation.dragondm1.baby1",
+				"baby2": "animation.dragondm1.baby2",
+				"baby3": "animation.dragondm1.baby3",
+				"baby4": "animation.dragondm1.baby4"
 			},
 			"scripts": {
 				"animate": [
@@ -50,6 +55,21 @@
 					"dragon_ani",
 					{
 						"dragon_attack": "query.is_delayed_attacking == 1"
+					},
+					{
+					"baby": "query.variant == 0 && query.is_baby"
+					},
+										{
+					"baby1": "query.variant == 1 && query.is_baby"
+					},
+										{
+					"baby2": "query.variant == 2 && query.is_baby"
+					},
+										{
+					"baby3": "query.variant == 3 && query.is_baby"
+					},
+										{
+					"baby4": "query.variant == 4 && query.is_baby"
 					}
 				],
 				"pre_animation": [
@@ -75,9 +95,9 @@
 				"controller.render.glow",
 				"controller.render.dragons.is_armored",
 				"controller.render.dragons.is_chested",
-				{ "controller.render.water_dragon_death_pre_pass": "query.death_ticks > 1.0" },
-				{ "controller.render.water_dragon_death_main_pass": "query.death_ticks > 1.0" },
-				{ "controller.render.water_dragon.default": "query.death_ticks <= 1.0" }
+				{ "controller.render.dragondm1_death_pre_pass": "query.death_ticks > 1.0" },
+				{ "controller.render.dragondm1_death_main_pass": "query.death_ticks > 1.0" },
+				{ "controller.render.dragondm1.default": "query.death_ticks <= 1.0" }
 			],
 			"spawn_egg": {
 				"texture": "water_dragon_head"

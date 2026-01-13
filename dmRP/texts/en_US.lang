@@ -1,7 +1,7 @@
 ﻿pack.name=Dragon Mounts: Bedrock Edition	#
 pack.description=Dragon Mounts: Bedrock Edition	#
 entity.dragon_keeper.name=Dragon Keeper
-action.interact.give_egg.dragonmounts=Give Egg
+action.interact.give_egg.dm=Give Egg
 
 entity.dm:ender_dragon.name=Ender Dragon	#
 entity.dm:dark_dragon.name=Ender Dragon	#
@@ -14,17 +14,17 @@ entity.dm:fire_dragon.name=Fire Dragon	#
 entity.dm:nether_dragon.name=Nether Dragon	#
 entity.dm:skeleton_dragon.name=Skeleton Dragon	#
 
-entity.dragonmounts:dragon_dissolve.name=Dead Dragon	#
-entity.dragonmounts:render_dragon.name=Render Dragon	#
+entity.dm:dragon_dissolve.name=Dead Dragon	#
 
-entity.dragonmounts:ender_dragon_egg.name=Ender Dragon Egg	#
-entity.dragonmounts:aether_dragon_egg.name=Aether Dragon Egg	#
-entity.dragonmounts:water_dragon_egg.name=Water Dragon Egg	#
-entity.dragonmounts:ice_dragon_egg.name=Ice Dragon Egg	#
-entity.dragonmounts:forest_dragon_egg.name=Forest Dragon Egg	#
-entity.dragonmounts:fire_dragon_egg.name=Fire Dragon Egg	#
-entity.dragonmounts:nether_dragon_egg.name=Nether Dragon Egg	#
-entity.dragonmounts:skeleton_dragon_egg.name=Skeleton Dragon Egg	#
+
+entity.dm:ender_dragon_egg.name=Ender Dragon Egg	#
+entity.dm:aether_dragon_egg.name=Aether Dragon Egg	#
+entity.dm:water_dragon_egg.name=Water Dragon Egg	#
+entity.dm:ice_dragon_egg.name=Ice Dragon Egg	#
+entity.dm:forest_dragon_egg.name=Forest Dragon Egg	#
+entity.dm:fire_dragon_egg.name=Fire Dragon Egg	#
+entity.dm:nether_dragon_egg.name=Nether Dragon Egg	#
+entity.dm:skeleton_dragon_egg.name=Skeleton Dragon Egg	#
 
 item.spawn_egg.entity.dm:ender_dragon.name=Spawn Ender Dragon	#
 item.spawn_egg.entity.dm:aether_dragon.name=Spawn Aether Dragon	#
@@ -35,23 +35,25 @@ item.spawn_egg.entity.dm:fire_dragon.name=Spawn Fire Dragon	#
 item.spawn_egg.entity.dm:nether_dragon.name=Spawn Nether Dragon	#
 item.spawn_egg.entity.dm:skeleton_dragon.name=Spawn Skeleton Dragon	#
 
-item.spawn_egg.entity.dragonmounts:ender_dragon_egg.name=Ender Dragon Egg	#
-item.spawn_egg.entity.dragonmounts:aether_dragon_egg.name=Aether Dragon Egg	#
-item.spawn_egg.entity.dragonmounts:water_dragon_egg.name=Water Dragon Egg	#
-item.spawn_egg.entity.dragonmounts:ice_dragon_egg.name=Ice Dragon Egg	#
-item.spawn_egg.entity.dragonmounts:forest_dragon_egg.name=Forest Dragon Egg	#
-item.spawn_egg.entity.dragonmounts:fire_dragon_egg.name=Fire Dragon Egg	#
-item.spawn_egg.entity.dragonmounts:nether_dragon_egg.name=Nether Dragon Egg	#
-item.spawn_egg.entity.dragonmounts:skeleton_dragon_egg.name=Skeleton Dragon Egg	#
+item.spawn_egg.entity.dm:ender_dragon_egg.name=Ender Dragon Egg	#
+item.spawn_egg.entity.dm:aether_dragon_egg.name=Aether Dragon Egg	#
+item.spawn_egg.entity.dm:water_dragon_egg.name=Water Dragon Egg	#
+item.spawn_egg.entity.dm:ice_dragon_egg.name=Ice Dragon Egg	#
+item.spawn_egg.entity.dm:forest_dragon_egg.name=Forest Dragon Egg	#
+item.spawn_egg.entity.dm:fire_dragon_egg.name=Fire Dragon Egg	#
+item.spawn_egg.entity.dm:nether_dragon_egg.name=Nether Dragon Egg	#
+item.spawn_egg.entity.dm:skeleton_dragon_egg.name=Skeleton Dragon Egg	#
+item.spawn_egg.entity.dm:cannon.name=Cannon
 
-tile.dragonmounts:aether_dragon_egg.name=Aether Dragon Egg	#
-tile.dragonmounts:ender_dragon_egg.name=Ender Dragon Egg	#
-tile.dragonmounts:fire_dragon_egg.name=Fire Dragon Egg	#
-tile.dragonmounts:forest_dragon_egg.name=Forest Dragon Egg	#
-tile.dragonmounts:ice_dragon_egg.name=Ice Dragon Egg	#
-tile.dragonmounts:nether_dragon_egg.name=Nether Dragon Egg	#
-tile.dragonmounts:skeleton_dragon_egg.name=Skeleton Dragon Egg	#
-tile.dragonmounts:water_dragon_egg.name=Water Dragon Egg	#
+tile.dm:aether_dragon_egg.name=Aether Dragon Egg	#
+tile.dm:ender_dragon_egg.name=Ender Dragon Egg	#
+tile.dm:fire_dragon_egg.name=Fire Dragon Egg	#
+tile.dm:forest_dragon_egg.name=Forest Dragon Egg	#
+tile.dm:ice_dragon_egg.name=Ice Dragon Egg	#
+tile.dm:nether_dragon_egg.name=Nether Dragon Egg	#
+tile.dm:skeleton_dragon_egg.name=Skeleton Dragon Egg	#
+tile.dm:water_dragon_egg.name=Water Dragon Egg	#
+tile.dm:steel_block.name=Steel Block
 
 action.hint.exit.unknown=Tap dismount to dismount	#
 action.hint.exit.dm:ender_dragon=Tap dismount to dismount	#
@@ -62,16 +64,42 @@ action.hint.exit.dm:forest_dragon=Tap dismount to dismount	#
 action.hint.exit.dm:fire_dragon=Tap dismount to dismount	#
 action.hint.exit.dm:nether_dragon=Tap dismount to dismount	#
 action.hint.exit.dm:skeleton_dragon=Tap dismount to dismount	#
+action.hint.exit.dm:cannon=Tap dismount to dismount	#
+action.interact.back_to_item.dm=Give Cannon
  
 action.interact.hatch_egg=Hatch	#
-action.interact.fasthatching.dragonmounts=Speed up hatching time	#
-action.interact.chested.dragonmounts=Equip	#
-action.interact.breath.dragonmounts=Collect	#
+action.interact.fasthatching.dm=Speed up hatching time	#
+action.interact.chested.dm=Equip	#
+action.interact.breath.dm=Collect	#
 action.interact.ride.dm2=Ride	#
-action.interact.speed.dragonmounts=Up	#
-action.interact.shear.dragonmounts=Shear	#
-action.interact.transform_block_dragon_eggs.dragonmounts=Blockify	#
+action.interact.speed.dm=Up	#
+action.interact.shear.dm=Shear	#
+action.interact.transform_block_dragon_eggs.dm=Blockify	#
 
 dm:itemGroup.name.dragon_eggs=Dragon Eggs
-item.spawn_egg.entity.dragonmounts:villager.name=Spawn Dragon Keeper
-entity.dragonmounts:villager.name=Dragon Keeper
+item.spawn_egg.entity.dm:villager.name=Spawn Dragon Keeper
+entity.dm:villager.name=Dragon Keeper
+
+item.dragon.amulet=Dragon Amulet
+tooltip.dm.ender=§5Ender
+tooltip.dm.aether=§3Aether
+tooltip.dm.water=§sWater
+tooltip.dm.ice=§bIce
+tooltip.dm.forest=§2Forest
+tooltip.dm.fire=§mFire
+tooltip.dm.nether=§pNether
+tooltip.dm.skeleton=§7Skeleton
+   
+   
+item.dragonmountsplus:steel_chestplate.name=Steel Chestplate
+item.dragonmountsplus:steel_boots.name=Steel Boots
+item.dragonmountsplus:steel_helmet.name=Steel Helmet
+item.dragonmountsplus:steel_leggings.name=Steel Leggings
+item.dragonmounts.dragon_axe.steel=Steel Axe
+item.dragonmounts.dragon_hoe.steel=Steel Hoe
+item.dragonmounts.dragon_shovel.steel=Steel Shovel
+item.dragonmounts.dragon_pickaxe.steel=Steel Pickaxe
+item.dragonmounts.dragon_sword.steel=Steel Sword
+item.steel_nugget=Steel Nugget
+item.steel_ingot=Steel Ingot
+item.bullet.name=Cannon Ball

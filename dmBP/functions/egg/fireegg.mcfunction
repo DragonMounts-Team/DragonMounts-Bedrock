@@ -1,2 +1,2 @@
-tp @e[r=0.5,family=dragon_egg] ~ -70 ~
-summon dragonmounts:fire_dragon_egg
+summon dm:fire_dragon_egg
+tp @e[r=0.5,family=dragon_egg,c=1] ~ -70 ~

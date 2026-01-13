@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.dragon.default": {
+		"controller.animation.dragon.defaultdm1": {
 			"states": {
 				"default": {
 					"transitions": [
@@ -11,8 +11,8 @@
 					],
 					"on_entry": [
 						"/tag @s add dm",
-						"/effect @s resistance 0 3 true",
-						"/execute @s ~ ~ ~ detect ~ ~-6 ~ air 0 execute @s ~ ~ ~ detect ~ ~-5 ~ air 0 execute @s ~ ~ ~ detect ~ ~-4 ~ air 0 execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 execute @s ~ ~ ~ detect ~ ~-2 ~ air 0 execute @s ~ ~ ~ detect ~ ~-1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 tag @s add flying",
+						"/function armor",
+						"/execute at @s if block ~ ~-6 ~ air if block ~ ~-5 ~ air if block ~ ~-4 ~ air if block ~ ~-3 ~ air if block ~ ~-2 ~ air if block ~ ~-1 ~ air if block ~ ~ ~ air run tag @s add flying",
 						"@s dm:dragon_hasarmor",
 						"@s dm:dragon_flying_b"
 					]

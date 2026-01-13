@@ -36,9 +36,32 @@
 		"skeletondragon_egg_item": {
 			"textures": "textures/items/mountdragon_eggs/skeleton"
 		},
+		"amulet": { "textures": "textures/items/amulet/dragon_amulet" },
+		//amulet
+	    "aether_amulet": { "textures": "textures/items/amulet/aether_dragon_amulet" },
+	    "nether_amulet": { "textures": "textures/items/amulet/nether_dragon_amulet" },
+	    "water_amulet": { "textures": "textures/items/amulet/water_dragon_amulet" },
+	    "ender_amulet": { "textures": "textures/items/amulet/ender_dragon_amulet" },
+	    "fire_amulet": { "textures": "textures/items/amulet/fire_dragon_amulet" },
+	    "ice_amulet": { "textures": "textures/items/amulet/ice_dragon_amulet" },
+	    "skeleton_amulet": { "textures": "textures/items/amulet/skeleton_dragon_amulet" },
+	    "forest_amulet": { "textures": "textures/items/amulet/forest_dragon_amulet" },	    
 //dragonkeeper		
 		"dragonmounts:villager_spawn_egg": {
       "textures": "textures/items/dragon_keeper/dragonmounts_villager_spawn_egg"
-   }
+   },
+		"cannon":{"textures": "textures/items/cannon"},   
+		"bullet":{"textures": "textures/items/cannon_ball"},
+		"steel_sword":{"textures": "textures/items/steel_sword"},
+		"steel_axe":{"textures": "textures/items/steel_axe"},
+		"steel_pickaxe":{"textures": "textures/items/steel_pickaxe"},
+		"steel_shovel":{"textures": "textures/items/steel_shovel"},
+		"steel_hoe":{"textures": "textures/items/steel_hoe"},
+		"steel_boots":{"textures": "textures/items/steel_boots"},
+		"steel_chestplate":{"textures": "textures/items/steel_chestplate"},
+		"steel_leggings":{"textures": "textures/items/steel_leggings"},
+		"steel_helmet":{"textures": "textures/items/steel_helmet"},
+		"steel_nugget":{"textures": "textures/items/steel_nugget"},
+		"steel_ingot":{"textures": "textures/items/steel_ingot"}		
   }      
 }

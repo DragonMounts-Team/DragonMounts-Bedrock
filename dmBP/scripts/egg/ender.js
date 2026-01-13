@@ -1,11 +1,20 @@
-import { system, world } from '@minecraft/server';
+import { world } from "@minecraft/server";
 
-world.beforeEvents.worldInitialize.subscribe(initEvent => {
-  initEvent.blockComponentRegistry.registerCustomComponent('bj_ender_egg_block:trigger', {
-    onPlayerInteract: e => {
-      const { x, y, z } = e.block.location;
-      e.player.runCommandAsync(`summon dragonmounts:ender_dragon_egg ${x} ${y + 1} ${z}`);
-      e.player.runCommandAsync(`setblock ${x} ${y} ${z} air`);
-    },
-  });
+world.beforeEvents.itemUseOn.subscribe(event => {
+  const player = event.source;
+  const item = event.itemStack;
+  const block = event.block;
+
+  if (!player || !item || !block) return;
+
+  // Kiểm tra người chơi đang "ngồi" (sneaking)
+  if (
+    player.isSneaking &&
+    item.typeId === "minecraft:flint_and_steel" &&
+    block.typeId === "minecraft:dragon_egg"
+  ) {
+    const { x, y, z } = block.location;
+    player.runCommandAsync(`setblock ${x} ${y} ${z} air`);
+    player.runCommandAsync(`summon dm:ender_dragon_egg ${x} ${y + 1} ${z}`);
+  }
 });

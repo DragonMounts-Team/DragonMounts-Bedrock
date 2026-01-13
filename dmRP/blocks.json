@@ -4,28 +4,29 @@
 		1,
 		0
 	],
-	"dragonmounts:aether_dragon_egg": {
+	"dm:aether_dragon_egg": {
 		"sound": "stone"
 	},
-	"dragonmounts:ender_dragon_egg": {
+	"dm:fire_dragon_egg": {
 		"sound": "stone"
 	},
-	"dragonmounts:fire_dragon_egg": {
+	"dm:forest_dragon_egg": {
 		"sound": "stone"
 	},
-	"dragonmounts:forest_dragon_egg": {
+	"dm:ice_dragon_egg": {
 		"sound": "stone"
 	},
-	"dragonmounts:ice_dragon_egg": {
+	"dm:nether_dragon_egg": {
 		"sound": "stone"
 	},
-	"dragonmounts:nether_dragon_egg": {
+	"dm:skeleton_dragon_egg": {
 		"sound": "stone"
 	},
-	"dragonmounts:skeleton_dragon_egg": {
+	"dm:water_dragon_egg": {
 		"sound": "stone"
 	},
-	"dragonmounts:water_dragon_egg": {
-		"sound": "stone"
-	}
+	"dm:steel_block": {
+      "textures": "steel_block",	    
+		"sound": "iron"
+	}	
 }

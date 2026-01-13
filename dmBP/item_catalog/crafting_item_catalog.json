@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "nature",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "dm:aether_dragon_egg",
+              "name": "dm:itemGroup.name.dragon_eggs"
+            },
+            "items": [
+              "dm:aether_dragon_egg",
+              "dm:nether_dragon_egg",
+              "dm:fire_dragon_egg",
+              "dm:ice_dragon_egg",
+              "dm:water_dragon_egg",
+              "dm:wither_dragon_egg",
+              "dm:skeleton_dragon_egg",
+              "minecraft:dragon_egg",
+              "dm:forest_dragon_egg",
+              "dm:ender_dragon_egg"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+//hahahahahahahahah                     
