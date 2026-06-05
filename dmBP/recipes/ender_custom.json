@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dm:ender_dragon_egg"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:dragon_egg"
+			}
+		},
+		"result": {
+			"item": "dm:ender_dragon_egg"
+		}
+	}
+}
