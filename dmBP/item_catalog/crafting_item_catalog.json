@@ -16,9 +16,7 @@
               "dm:fire_dragon_egg",
               "dm:ice_dragon_egg",
               "dm:water_dragon_egg",
-              "dm:wither_dragon_egg",
               "dm:skeleton_dragon_egg",
-              "minecraft:dragon_egg",
               "dm:forest_dragon_egg",
               "dm:ender_dragon_egg"
             ]
@@ -27,5 +25,4 @@
       }
     ]
   }
-}
-//hahahahahahahahah                     
+}                    
