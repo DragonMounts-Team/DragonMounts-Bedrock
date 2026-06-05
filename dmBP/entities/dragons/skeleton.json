@@ -284,24 +284,14 @@
           "require_tame": true,
           "blend_attributes": false,
           "inherit_tamed": true,
-          "breeds_with": [
-              {
-            "mate_type": "dm:f_skeleton_dragon",
+          "breeds_with":{
+            "mate_type": "dm:skeleton_dragon",
             "baby_type": "dm:skeleton_dragon_egg",
             "breed_event": {
-              "event": "dm:skeleton_dragon_egg_born",
-              "target": "self"
+              "event": "minecraft:entity_spawned",
+              "target": "baby"
             }
           },
-          {
-          "mate_type": "dm:skeleton_dragon",
-            "baby_type": "dm:skeleton_dragon_egg",
-            "breed_event": {
-              "event": "dm:skeleton_dragon_egg_born",
-              "target": "self"
-            }
-          }
-          ],
           "breed_items": [
             "fish",
             "salmon",
@@ -362,8 +352,8 @@
         },
         "minecraft:leashable": {
           "soft_distance": 8.0,
-          "hard_distance": 24.0,
-          "max_distance": 12.0,
+          "hard_distance": 12.0,
+          "max_distance": 24.0,
           "on_leash": {
             "event": "dm:dragon_on_leash",
             "target": "self"
@@ -517,7 +507,12 @@
             {
               "cause": "fall",
               "deals_damage": false
-            }
+            },
+					  {
+						  "on_damage": {
+							  "event": "dm:dragon_temp_unsit_start"
+						  }
+					  }
           ]
         },
         "minecraft:mark_variant": {
@@ -533,7 +528,12 @@
             {
               "cause": "fall",
               "deals_damage": false
-            }
+            },
+					  {
+						  "on_damage": {
+							  "event": "dm:dragon_temp_unsit_start"
+						  }
+					  }
           ]
         },
         "minecraft:mark_variant": {
@@ -549,7 +549,12 @@
             {
               "cause": "fall",
               "deals_damage": false
-            }
+            },
+					  {
+						  "on_damage": {
+							  "event": "dm:dragon_temp_unsit_start"
+						  }
+					  }
           ]
         },
         "minecraft:mark_variant": {
@@ -565,7 +570,12 @@
             {
               "cause": "fall",
               "deals_damage": false
-            }
+            },
+					  {
+						  "on_damage": {
+							  "event": "dm:dragon_temp_unsit_start"
+						  }
+					  }
           ]
         },
         "minecraft:mark_variant": {
@@ -581,7 +591,12 @@
             {
               "cause": "fall",
               "deals_damage": false
-            }
+            },
+					  {
+						  "on_damage": {
+							  "event": "dm:dragon_temp_unsit_start"
+						  }
+					  }
           ]
         },
         "minecraft:mark_variant": {
@@ -660,130 +675,6 @@
         "totalSupply": 15,
         "breathesWater": true,
         "suffocateTime": 0
-      },
-      "minecraft:damage_sensor": {
-        "triggers": [
-          {
-            "cause": "anvil",
-            "deals_damage": true
-          },
-          {
-            "cause": "block_explosion",
-            "deals_damage": true
-          },
-          {
-            "cause": "charging",
-            "deals_damage": true
-          },
-          {
-            "cause": "contact",
-            "deals_damage": false
-          },
-          {
-            "cause": "drowning",
-            "deals_damage": true
-          },
-          {
-            "cause": "entity_attack",
-            "deals_damage": true
-          },
-          {
-            "cause": "entity_explosion",
-            "deals_damage": true
-          },
-          {
-            "cause": "fall",
-            "deals_damage": false
-          },
-          {
-            "cause": "falling_block",
-            "deals_damage": true
-          },
-          {
-            "cause": "fire",
-            "deals_damage": true
-          },
-          {
-            "cause": "fire_tick",
-            "deals_damage": true
-          },
-          {
-            "cause": "fly_into_wall",
-            "deals_damage": false
-          },
-          {
-            "cause": "freezing",
-            "deals_damage": true
-          },
-          {
-            "cause": "lava",
-            "deals_damage": true
-          },
-          {
-            "cause": "lightning",
-            "deals_damage": true
-          },
-          {
-            "cause": "magic",
-            "deals_damage": false
-          },
-          {
-            "cause": "magma",
-            "deals_damage": true
-          },
-          {
-            "cause": "projectile",
-            "deals_damage": true
-          },
-          {
-            "cause": "stalactite",
-            "deals_damage": true
-          },
-          {
-            "cause": "stalagmite",
-            "deals_damage": true
-          },
-          {
-            "cause": "starve",
-            "deals_damage": true
-          },
-          {
-            "cause": "suffocation",
-            "deals_damage": false
-          },
-          {
-            "cause": "suicide",
-            "deals_damage": false
-          },
-          {
-            "cause": "temperature",
-            "deals_damage": true
-          },
-          {
-            "cause": "thorns",
-            "deals_damage": false
-          },
-          {
-            "cause": "void",
-            "deals_damage": false
-          },
-          {
-            "cause": "wither",
-            "deals_damage": false
-          },
-					{
-						"on_damage": {
-							"filters": {
-								"all_of": [
-									{
-										"test": "has_damage"
-									}
-								]
-							},
-							"event": "dm:dragon_temp_unsit_start"
-						}
-					}
-        ]
       },
       "minecraft:equippable": {
         "slots": [
@@ -962,17 +853,6 @@
       }
     },
     "events": {
-      "dm:skeleton_dragon_egg_born":{
-        "spawn_entity": {
-          "entity": "dm:skeleton_dragon_egg",
-          "spawn_pos": {
-            "x": 0,
-            "y": 1,
-            "z": 0
-          }
-        }
-      },
-
       "dm:death_ani": {
         "add": {
           "component_groups": [
