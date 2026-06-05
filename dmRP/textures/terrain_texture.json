@@ -20,16 +20,13 @@
 			"textures": [ "textures/blocks/eggs/ice" ]
 		},
 		"nether_dragon_egg": {
-			"textures": [ "textures/blocks/magma" ]
+			"textures": [ "textures/blocks/eggs/nether" ]
 		},
 		"skeleton_dragon_egg": {
 		      "textures": [ "textures/blocks/eggs/ghost" ]
 		},
 		"water_dragon_egg": {
 			"textures": [ "textures/blocks/eggs/water" ]
-		},
-		"steel_block": {
-			"textures": [ "textures/blocks/steel_block" ]
 		}		
 	} 
 }                      
