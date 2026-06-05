@@ -2,13 +2,13 @@
   "format_version": "1.20.60",
   "minecraft:block": {
     "description": {
-      "identifier": "dm:nether_dragon_egg",
+      "identifier": "dm:ender_dragon_egg",
       "menu_category": {
         "category": "nature"
       }
     },
     "components": {
-      "minecraft:loot": "loot_tables/blocks/nether.json",
+      "minecraft:loot": "loot_tables/blocks/aether.json",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1.0
       },
@@ -45,14 +45,14 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "nether_dragon_egg",
+          "texture": "dragon_egg",
           "render_method": "opaque"
         }
       },
       "minecraft:geometry": "geometry.dragon_egg",
       "tag:stone": {},
       "minecraft:custom_components": [
-        "dm_egg_block_trigger:nether"
+        "dm_egg_block_trigger:ender"
       ]
     }
   }
