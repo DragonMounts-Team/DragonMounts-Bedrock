@@ -37,19 +37,9 @@
 		"controller.render.dragondm1.default": {
 			"arrays": {
 				"textures": {
-					"Array.base": [
-						"Texture.defaultdm1"
-					],
 					"Array.saddled": [
 						"Texture.dragon_none",
 						"Texture.dragon_saddled"
-					],
-					"Array.armor": [
-						"Texture.dragon_none",
-						"Texture.dragon_armor_iron",
-						"Texture.dragon_armor_gold",
-						"Texture.dragon_armor_diamond",
-						"Texture.dragon_armor_emerald"
 					]
 				}
 			},
@@ -65,9 +55,9 @@
 				}
 			],
 			"textures": [
-				"Array.base[query.variant]",
+				"Texture.defaultdm1",
 				"Array.saddled[query.is_saddled]",
-				"Array.armor[query.mark_variant]"
+				"Texture.dragon_none"
 			]
 		},
 		"controller.render.dragondm1_egg": {
