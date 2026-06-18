@@ -5,9 +5,9 @@ class FallingBlockUtils {
     // Stores falling block types for easy access
     static FallingBlockTypes = Object.keys(FallingBlocks);
     // Creates permutations of all FallingBlocks for easy access
-    static FallingBlockPermutations = Object.fromEntries(Object.keys(FallingBlocks).map(id => [id, BlockPermutation.resolve(id)]));
+    static get FallingBlockPermutations(){Object.fromEntries(Object.keys(FallingBlocks).map(id => [id, BlockPermutation.resolve(id)]))};
     // Air Permutation
-    static AirBlock = BlockPermutation.resolve('minecraft:air');
+    static get AirBlock (){BlockPermutation.resolve('minecraft:air')};
     // The name of the states and properties used in layer blocks
     static LayerState = 'falling_block:layers';
     static LayerProperty = 'falling_block:layers';
@@ -99,7 +99,7 @@ class FallingBlockManager {
         if (!fb || !FallingBlockUtils.shouldFall(block, fb)) return;
         const { typeId, permutation } = block;
         fb.onStartFalling?.(block.dimension, block.location);
-        block.setPermutation(FallingBlockUtils.AirBlock);
+        block.setType("minecraft:air");
         const fallingEntity = block.dimension.spawnEntity(`${typeId}.entity`, { x: block.x + 0.5, y: block.y, z: block.z + 0.5 });
         if (fb.config?.fallingSpeed) fallingEntity.applyImpulse({ x: 0, y: Math.min(1, -Math.abs(fb.config.fallingSpeed)), z: 0 });
         if (fb.config?.type === 'layers') fallingEntity.setProperty(FallingBlockUtils.LayerProperty, permutation.getState(FallingBlockUtils.LayerState));
@@ -107,7 +107,7 @@ class FallingBlockManager {
     }
     // Handles the logic of placing the blocks after falling.
     onGround(block, entity) {
-        const id = entity.typeId.replace('.entity', ''), fb = FallingBlocks[id]; 
+        const id = entity.typeId.replace('.entity', ''), fb = FallingBlocks[id];
         if (!fb) return;
         let permutationToPlace = null;
         const isReplaceable = FallingBlockUtils.ReplaceableBlocks.has(block.typeId),
@@ -118,14 +118,14 @@ class FallingBlockManager {
             case 'powder': permutationToPlace = FallingBlockUtils.resolvePowderPermutation(id, fb.config?.solidBlock, entity.isInWater); break;
             case 'layers': {
                 const addLayers = 1 + entity.getProperty(FallingBlockUtils.LayerProperty);
-                if (!stackLayers) { if (isReplaceable) permutationToPlace = FallingBlockUtils.FallingBlockPermutations[id].withState(FallingBlockUtils.LayerState, addLayers - 1 ); break; }
+                if (!stackLayers) { if (isReplaceable) permutationToPlace = BlockPermutation.resolve(id).withState(FallingBlockUtils.LayerState, addLayers - 1 ); break; }
                 const blockLayers = block.permutation.getState(FallingBlockUtils.LayerState) + addLayers;
-                if (blockLayers < fb.config.maxLayers) { permutationToPlace = FallingBlockUtils.FallingBlockPermutations[id].withState(FallingBlockUtils.LayerState, blockLayers ); break; }
-                permutationToPlace = FallingBlockUtils.FallingBlockPermutations[id].withState(FallingBlockUtils.LayerState, fb.config.maxLayers - 1 );
+                if (blockLayers < fb.config.maxLayers) { permutationToPlace = BlockPermutation.resolve(id).withState(FallingBlockUtils.LayerState, blockLayers ); break; }
+                permutationToPlace = BlockPermutation.resolve(id).withState(FallingBlockUtils.LayerState, fb.config.maxLayers - 1 );
                 if (block.y < block.dimension.heightRange.max) block.above().setPermutation(BlockPermutation.resolve(id, { [FallingBlockUtils.LayerState]: blockLayers - fb.config.maxLayers }));
                 break;
             }
-            default: permutationToPlace = FallingBlockUtils.FallingBlockPermutations[id];
+            default: permutationToPlace = BlockPermutation.resolve(id);
         }
         entity.remove();
         if (permutationToPlace) { block.setPermutation(permutationToPlace); fb.onGround?.(block); }
@@ -179,5 +179,5 @@ system.afterEvents.scriptEventReceive.subscribe(({ id, sourceEntity }) => {
     }
 });
 // Custom component registration
-world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => { for (const [id, comp] of Object.entries(FallingBlockUtils.CustomComponents)) blockComponentRegistry.registerCustomComponent(id, comp); });
+system.beforeEvents.startup.subscribe(({blockComponentRegistry}) => { for (const [id, comp] of Object.entries(FallingBlockUtils.CustomComponents)) blockComponentRegistry.registerCustomComponent(id, comp); });
 //code dm2 

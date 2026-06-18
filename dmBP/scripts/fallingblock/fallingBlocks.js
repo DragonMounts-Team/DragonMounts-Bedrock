@@ -10,6 +10,9 @@ export const FallingBlocks = {
     'dm:aether_dragon_egg': {
         onRemove: (dimension, location) => { dropFallingBlock('dm:aether_dragon_egg', dimension, location); }
     },
+    'dm:ender_dragon_egg': {
+        onRemove: (dimension, location) => { dropFallingBlock('dm:ender_dragon_egg', dimension, location); }
+    },
     'dm:water_dragon_egg': {
         onRemove: (dimension, location) => { dropFallingBlock('dm:water_dragon_egg', dimension, location); }
     },
