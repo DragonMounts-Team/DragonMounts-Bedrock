@@ -1,7 +1,6 @@
 {
   "pools": [
     {
-       {
       "rolls": 1,
       "entries": [
         {
@@ -14,7 +13,8 @@
           "weight": 8
         }
       ]
-    },        
+    }, 
+    {
       "rolls": 3,
       "entries": [
         {
