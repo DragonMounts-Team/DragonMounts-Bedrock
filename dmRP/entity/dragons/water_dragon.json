@@ -17,16 +17,13 @@
 				"glow": "textures/entitys/water_dragon/glow",
 				"dragon_saddled": "textures/entitys/dragon_saddled",
 				"dragon_chested": "textures/entitys/dragon_chested",
-				"dragon_armor_iron": "textures/entitys/dragon_armor/armor_iron",
-				"dragon_armor_gold": "textures/entitys/dragon_armor/armor_gold",
-				"dragon_armor_emerald": "textures/entitys/dragon_armor/armor_emerald",
-				"dragon_armor_diamond": "textures/entitys/dragon_armor/armor_diamond",
 				"dragon_none": "textures/entitys/none",
 				"exploding": "textures/entitys/dragon_dissolve",
 				"beam": "textures/entitys/endercrystal/endercrystal_beam"
 			},
 			"geometry": {
-				"dragon_default": "geometry.mountdragon_default2dm1",							"glow": "geometry.mountdragon_default2dm1",
+				"dragon_default": "geometry.mountdragon_default2dm1",
+				"glow": "geometry.mountdragon_default2dm1",
 				"dragon_saddled": "geometry.mountdragon_saddled",
 				"dragon_chested": "geometry.mountdragon_chested"
 			},
@@ -57,19 +54,7 @@
 						"dragon_attack": "query.is_delayed_attacking == 1"
 					},
 					{
-					"baby": "query.variant == 0 && query.is_baby"
-					},
-										{
-					"baby1": "query.variant == 1 && query.is_baby"
-					},
-										{
-					"baby2": "query.variant == 2 && query.is_baby"
-					},
-										{
-					"baby3": "query.variant == 3 && query.is_baby"
-					},
-										{
-					"baby4": "query.variant == 4 && query.is_baby"
+						"baby": "query.is_baby"
 					}
 				],
 				"pre_animation": [
@@ -93,7 +78,6 @@
 			"render_controllers": [
 				"controller.render.dragons.is_saddled",
 				"controller.render.glow",
-				"controller.render.dragons.is_armored",
 				"controller.render.dragons.is_chested",
 				{ "controller.render.dragondm1_death_pre_pass": "query.death_ticks > 1.0" },
 				{ "controller.render.dragondm1_death_main_pass": "query.death_ticks > 1.0" },
@@ -101,7 +85,8 @@
 			],
 			"spawn_egg": {
 				"texture": "water_dragon_head"
-			}
+			},
+			"enable_attachables": true
 		}
 	}
 }
