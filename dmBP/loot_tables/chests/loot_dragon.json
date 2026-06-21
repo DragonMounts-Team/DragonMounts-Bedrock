@@ -42,7 +42,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:cooper_ingot",
+          "name": "minecraft:copper_ingot",
           "functions": [
             {
               "function": "set_count",
@@ -56,7 +56,7 @@
         },
         {
           "type": "item",
-          "name": "minecraft:iron_nuggets",
+          "name": "minecraft:iron_nugget",
           "functions": [
             {
               "function": "set_count",
