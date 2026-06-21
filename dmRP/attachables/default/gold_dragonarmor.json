@@ -1,0 +1,21 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "dm:golden_horse_armor",
+      "item": { "minecraft:golden_horse_armor": "q.is_owner_identifier_any('dm:aether_dragon','dm:ender_dragon','dm:fire_dragon','dm:forest_dragon','dm:ice_dragon','dm:nether_dragon','dm:skeleton_dragon','dm:water_dragon')"},
+      "materials": { "default": "entity_alphatest", "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "default": "textures/entitys/dragon_armor/armor_gold",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.mountdragon_dragon_armor"
+      },
+      "render_controllers": [
+        "controller.render.dragonarmor.default"
+      ]
+    }
+  }
+}
